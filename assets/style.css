@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+    --primary: #32AB75;
+    --secondary: #FF7000;
+    --primary-dark: #467A63;
+    --primary-light: #AAE885;
+    --white: #FAFCF9;
+    --black: #292A2F;
+    --bg: #F2F2F2;
+    --font: 'Outfit', sans-serif;
+    --ygap : '48px';
+
+    --animate-duration: 800ms;
+    --animate-delay: 0.1s;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--black);
+}
+
+h1,h2,h3,h4,h5,h6, a {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+img{
+    object-fit: cover;
+}
+
+section{
+    padding: 48px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: inside;
+}
+
+section ul {
+    text-indent: -2.7ch;
+}
+
+
+
+.text-justify{
+    text-align: justify;
+    /* margin-bottom: 24px; */
+}
+
+.bx{
+    font-size: 25px;
+}
+
+/* Navbar Start */
+
+.nav__bg{
+    background-color: var(--primary);
+    border-bottom: 2.5px solid var(--white);
+}
+
+.navbar-brand{
+    color: var(--white);
+    background: var(--white);
+    top: 0;
+    padding: 15px 15px 20px;
+    border-radius: 0 0 120px 120px;
+    z-index: 100;
+}
+
+.navbar-brand-mobile{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar-brand-mobile:focus{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.navbar-brand-mobile img{
+    width: 50px;
+    text-decoration: none;
+}
+
+.navbar-brand img{
+    width: 120px;
+}
+
+.navbar-brand:hover{
+    color: var(--primary-light);
+}
+
+.nav-logo-text{
+    color: var(--white);
+}
+
+.nav-link{
+    color: var(--white) !important;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#navbarSupportedContent > ul > li.nav-item.dropdown > ul{
+    background-color: var(--bg);
+
+    border: none;
+    outline: none;
+}
+
+a.dropdown-item:link{
+    background-color: var(--bg);
+}
+
+a.dropdown-item:hover{
+    background-color: var(--bg);
+    color: var(--black);
+}
+
+a.dropdown-item:focus{
+    background-color: var(--bg);
+}
+
+.nav-link:hover{
+    color: var(--black) !important;
+}
+
+.nav-link:focus{
+    color: var(--black) !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Navbar End */
+
+
+/* Carousel Start */
+
+.carousel-item{
+    /* height: calc(100vh - 70px); */
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat scroll;
+    background-size: cover;
+}
+
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: var(--black);
+    opacity: 0.6;
+}
+
+.carousel-caption{
+  bottom: calc(50% - 90px);
+  text-align: left;
+}
+
+.carousel-caption h1{
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.carousel-caption p{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+/* Carousel End */
+
+/* About Start */
+
+section#about{
+    background-color: var(--bg);
+}
+
+/* About End */
+
+/* Ft Services Start */
+
+.card{
+    border: none;
+    border-radius: 0;
+}
+
+.card img{
+    border-radius: 0;
+}
+
+
+
+.card:hover{
+    animation: pulse; 
+    animation-duration: var(--animate-duration);
+    animation-delay: var(--animate-delay);
+}
+
+.card .card-body{
+    padding: 8px 0 0;
+}
+
+.card-title{
+    font-size: 20px;
+    color: var(--primary-dark);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.card-text{
+    font-size: 16px;
+    color: var(--secondary);
+    margin-bottom: 0;
+}
+
+/* Ft Services End */
+
+
+/* Why Choose Us Start */
+
+section#whychoose{
+    background-color: var(--primary-dark);
+    color: var(--white) !important ;
+}
+
+section#whychoose h2{
+    color: var(--white);
+}
+
+/* Why Choose Us End */
+
+/* Footer Start */
+
+footer{
+    background-color: var(--bg);
+    padding: 36px 0;
+}
+
+.footer-img {
+    width: 100px;
+}
+
+.footer-head{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.footer-info{
+    line-height: 2;
+}
+
+.footer-list > li {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* .footer-list > li::before{
+    content: ' ';
+    background: var(--black);
+    display: inline-block;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+} */
+
+.footer-list-color > li {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    /* display: flex;
+    align-items: center; */
+}
+
+/* .footer-list-color > li::before{
+    content: ' ';
+    display: inline-block;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+} */
+
+.footer-list-color > li:nth-child(odd):before{
+    background: var(--primary);
+}
+
+.footer-list-color > li:nth-child(even):before{
+    background: var(--secondary);
+}
+
+.footer-list-color > li:nth-child(even) {
+    color: var(--secondary);
+}
+
+.footer-list-color > li:nth-child(odd) {
+    color: var(--primary);
+}
+
+
+p.footer-name-title{
+    font-weight: 800;
+    color: var(--secondary);
+}
+
+p.footer-name-title span{
+    color: var(--primary-dark);
+}
+
+.test-list > li{
+    display: flex;
+    align-items: center;
+}
+
+#our-service-img{
+    margin-left: 49%;
+}
+
+
+/* Footer End */
+
+
+/* Sub Footer Start */
+
+#subfooter {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 16px;
+}
+
+/* Sub Footer End */
+
+
+/* Responsive Start */
+
+@media (width <= 576px) { 
+
+.carousel-item{
+    height: 50vh;
+    min-height: 300px;
+    background: no-repeat scroll;
+    background-size: cover;
+}
+
+.carousel-item img{
+    height: 50vh;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.card .card-body{
+    text-align: center;
+}
+
+#our-service-img{
+    margin-left: 0;
+}
+
+}
+
+@media (width >= 576px){ 
+
+    .carousel-item{
+        height: 50vh;
+        min-height: 300px;
+        background: no-repeat scroll;
+        background-size: cover;
+    }
+    
+    .carousel-item img{
+        height: 50vh;
+        object-fit: cover;
+    }
+    
+    /* Carousel End */
+    
+}
+
+
+@media (width >= 992px ){ 
+
+    .carousel-item{
+        height: 80vh;
+        min-height: 300px;
+        background: no-repeat scroll;
+        background-size: cover;
+    }
+    
+    .carousel-item img{
+        height: 80vh;
+        object-fit: cover;
+    }
+    
+    /* Carousel End */
+    
+}
+
+
+@media (max-width: 390px){ 
+    .nav-sm-img{
+        display: none;
+    }
+}
+
+/* Responsive End */
+
