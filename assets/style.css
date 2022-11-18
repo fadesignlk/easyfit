@@ -65,7 +65,6 @@ section ul {
 
 .text-justify{
     text-align: justify;
-    /* margin-bottom: 24px; */
 }
 
 .bx{
@@ -450,11 +449,7 @@ h2{
 }
 
 
-@media (max-width: 390px){ 
-    .nav-sm-img{
-        display: none;
-    }
-}
+
 
 /* Responsive End */
 
