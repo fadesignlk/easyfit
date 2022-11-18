@@ -381,14 +381,14 @@ p.footer-name-title span{
 @media (width <= 576px) { 
 
 .carousel-item{
-    height: 50vh;
+    height: 65vh;
     min-height: 300px;
     background: no-repeat scroll;
     background-size: cover;
 }
 
 .carousel-item img{
-    height: 50vh;
+    height: 65vh;
     object-fit: cover;
 }
 
