@@ -325,6 +325,27 @@ section#vision img.lg-img, section#mission img.lg-img, section#values img.lg-img
 }
 /* Vision End */
 
+/* MD Message Start */
+section#mdmessage h2, section#mdmessage p{
+    color: var(--white) !important;
+}
+
+.md-name{
+    text-align: center;
+    margin: 16px 0;
+    color: var(--white);
+
+}
+
+.md-name h6{
+    font-weight: normal;
+}
+
+.md-msg-text{
+    line-height: 1.6;
+}
+/* MD Message End */
+
 
 /* Footer Start */
 
