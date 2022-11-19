@@ -54,11 +54,14 @@ p{
 ul{
     padding: 0;
     margin: 0;
-    list-style: inside;
+    list-style: outside;
+    padding-left: 1em;
 }
 
+
+
 section ul {
-    text-indent: -2.7ch;
+
 }
 
 
