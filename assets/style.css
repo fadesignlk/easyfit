@@ -140,12 +140,14 @@ a.dropdown-item:link{
 }
 
 a.dropdown-item:hover{
-    background-color: var(--bg);
+    background-color: var(--secondary);
     color: var(--black);
 }
 
 a.dropdown-item:focus{
-    background-color: var(--bg);
+    background-color: var(--secondary);
+    border: none !important;
+    outline: none !important;
 }
 
 .nav-link:hover{
@@ -362,7 +364,7 @@ footer{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--primary-dark);
     margin-bottom: 16px;
 }
 
@@ -379,7 +381,7 @@ footer{
 }
 
 .footer-list-color > li {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 8px;
 
@@ -397,10 +399,11 @@ footer{
 p.footer-name-title{
     font-weight: 800;
     color: var(--secondary);
+    font-size: 14px;
 }
 
 p.footer-name-title span{
-    color: var(--primary-dark);
+    color: var(--primary);
 }
 
 .test-list > li{
@@ -500,6 +503,12 @@ ul#first {
 
  .md-msg-text{
     line-height: 1.5;
+}
+
+.footer-list-color > li {
+    font-size: 14px;
+
+
 }
 
 }
