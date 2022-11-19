@@ -175,15 +175,17 @@ a.dropdown-item:focus{
 /* Carousel Start */
 
 .carousel-item{
-    /* height: calc(100vh - 70px); */
-    height: 100vh ;
+    height: calc(100vh - 70px);
+    /* height: 100vh ; */
     min-height: 300px;
     background: no-repeat scroll;
     background-size: cover;
 }
 
 .carousel-item img{
-    height: 100vh ;
+    height: calc(100vh - 70px);
+
+    /* height: 100vh ; */
     object-fit: cover;
 }
 
@@ -219,6 +221,38 @@ a.dropdown-item:focus{
 }
 
 /* Carousel End */
+
+
+/* Header Start */
+header{
+    height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('img/header/overview.jpg');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    color: var(--white);
+}
+
+
+header h2{
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+header h2{
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+/* Header End */
 
 /* About Start */
 
@@ -279,6 +313,18 @@ section#whychoose h2{
 }
 
 /* Why Choose Us End */
+
+
+/* Vision Start */
+section#vision img, section#mission img, section#values img{
+    width: 100px;
+}
+
+section#vision img.lg-img, section#mission img.lg-img, section#values img.lg-img{
+    width: 160px;
+}
+/* Vision End */
+
 
 /* Footer Start */
 
@@ -365,14 +411,14 @@ p.footer-name-title span{
 @media (max-width : 576px) { 
 
 .carousel-item{
-    height: 65vh;
+    height: 60vh;
     min-height: 300px;
     background: no-repeat scroll;
     background-size: cover;
 }
 
 .carousel-item img{
-    height: 65vh;
+    height: 60vh;
     object-fit: cover;
 }
 
@@ -380,7 +426,7 @@ p.footer-name-title span{
 
 
 .carousel-caption{
-  bottom: calc(50% - 140px);
+  bottom: calc(50% - 100px);
   text-align: left;
 }
 
@@ -437,14 +483,14 @@ ul#first {
 @media (width >= 576px) and (width <= 768px){ 
 
     .carousel-item{
-        height: 65vh;
+        height: 60vh;
         min-height: 300px;
         background: no-repeat scroll;
         background-size: cover;
     }
     
     .carousel-item img{
-        height: 65vh;
+        height: 60vh;
         object-fit: cover;
     }
     
@@ -452,7 +498,7 @@ ul#first {
     
     
     .carousel-caption{
-      bottom: calc(50% - 175px);
+      bottom: calc(50% - 150px);
       text-align: left;
     }
     
