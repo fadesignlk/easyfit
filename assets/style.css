@@ -114,6 +114,10 @@ section ul {
     color: var(--white);
 }
 
+.nav-logo-text p{
+    font-size: 14px;
+}
+
 .nav-link{
     color: var(--white) !important;
     font-size: 17px;
@@ -168,11 +172,16 @@ a.dropdown-item:focus{
 /* Carousel Start */
 
 .carousel-item{
-    height: calc(100vh - 70px);
-    /* height: 100vh; */
+    /* height: calc(100vh - 70px); */
+    height: 100vh ;
     min-height: 300px;
     background: no-repeat scroll;
     background-size: cover;
+}
+
+.carousel-item img{
+    height: 100vh ;
+    object-fit: cover;
 }
 
 .carousel-item::before{
@@ -378,7 +387,7 @@ p.footer-name-title span{
 
 /* Responsive Start */
 
-@media (width <= 576px) { 
+@media (max-width : 576px) { 
 
 .carousel-item{
     height: 65vh;
@@ -437,30 +446,65 @@ h2{
     margin-left: 0;
 }
 
+.footer-list-color {
+   border-bottom: 1px solid rgba(41, 42, 47, 0.2);
+   margin-bottom: 8px;
+
+}
+
+
+
+
+
 
 
 }
 
-@media (width >= 576px){ 
+@media (width >= 576px) and (width <= 768px){ 
 
     .carousel-item{
-        height: 50vh;
+        height: 65vh;
         min-height: 300px;
         background: no-repeat scroll;
         background-size: cover;
     }
     
     .carousel-item img{
-        height: 50vh;
+        height: 65vh;
         object-fit: cover;
     }
     
-    /* Carousel End */
+    /* Carousel Start */
+    
+    
+    .carousel-caption{
+      bottom: calc(50% - 175px);
+      text-align: left;
+    }
+    
+    .carousel-caption h1{
+        font-size: 48px;
+        font-weight: 800;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+    
+    .carousel-caption p{
+        font-size: 32px;
+        font-weight: 500;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+    
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
+    
     
 }
 
 
-@media (width >= 992px ){ 
+/* @media (width >= 992px ){ 
 
     .carousel-item{
         height: 80vh;
@@ -474,9 +518,8 @@ h2{
         object-fit: cover;
     }
     
-    /* Carousel End */
     
-}
+} */
 
 
 
