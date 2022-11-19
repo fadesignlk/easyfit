@@ -498,6 +498,9 @@ ul#first {
     padding-top: 8px;
  }
 
+ .md-msg-text{
+    line-height: 1.5;
+}
 
 }
 
