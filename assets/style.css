@@ -233,6 +233,7 @@ header{
     background-position: center center ;
     background-size: cover;
     color: var(--white);
+    text-transform: uppercase;
 }
 
 
@@ -387,6 +388,12 @@ footer{
 
 }
 
+.footer-sm-text {
+    font-size: 10px !important;
+
+
+}
+
 .footer-list-color > li:nth-child(even) {
     color: var(--secondary);
 }
@@ -404,6 +411,7 @@ p.footer-name-title{
 
 p.footer-name-title span{
     color: var(--primary);
+    display: block;
 }
 
 .test-list > li{
