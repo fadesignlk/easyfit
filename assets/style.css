@@ -431,6 +431,7 @@ p.footer-name-title{
     font-weight: 800;
     color: var(--secondary);
     font-size: 14px;
+    margin-bottom: 16px;
 }
 
 p.footer-name-title span{
