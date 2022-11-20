@@ -49,6 +49,7 @@ a{
 
 p{
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
 }
 
 ul{
@@ -236,6 +237,20 @@ header{
     text-transform: uppercase;
 }
 
+header#md{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('img/header/md.png');
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: cover;
+}
+
+header#contact{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('img/header/contact.jpg');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+}
+
 
 header h2{
     color: var(--white);
@@ -348,6 +363,19 @@ section#mdmessage h2, section#mdmessage p{
     line-height: 1.6;
 }
 /* MD Message End */
+
+/* Contact Start */
+.contact-title{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-body{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Contact End */
 
 
 /* Footer Start */
