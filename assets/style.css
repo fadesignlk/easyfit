@@ -519,6 +519,12 @@ ul#first {
 
 }
 
+.footer-sm-text {
+    font-size: 13px !important;
+
+
+}
+
 }
 
 @media (width >= 576px) and (width <= 768px){ 
