@@ -244,6 +244,13 @@ header#md{
     background-size: cover;
 }
 
+header#services{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('img/header/services.jpg');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+}
+
 header#contact{
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('img/header/contact.jpg');
     background-repeat: no-repeat;
@@ -398,11 +405,12 @@ footer{
 }
 
 .footer-info{
-    line-height: 2;
+    line-height: 2.3;
+    margin-top: 32px;
 }
 
 .footer-list > li {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 8px;
     /* display: flex;
@@ -414,6 +422,11 @@ footer{
     font-weight: 700;
     margin-bottom: 8px;
 
+}
+
+.footer-contact-title{
+    font-size: 18px;
+    margin-top: 16px;
 }
 
 
@@ -544,9 +557,15 @@ ul#first {
 
 .footer-list-color > li {
     font-size: 13px;
-
-
 }
+
+.footer-info{
+    line-height: 2;
+    margin-top: 8px;
+    margin-bottom: 16px !important;
+}
+
+
 
 
 }
