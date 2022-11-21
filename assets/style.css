@@ -35,6 +35,28 @@ h2{
     color: var(--black);
 }
 
+.service h2{
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: var(--primary);
+    text-align: center;
+}
+
+.service h5{
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.service h6{
+    margin: 20px 0 16px;
+    font-weight: 800px;
+    font-size: 20px;
+}
+
+.service img{object-fit: cover;}
+
 img{
     object-fit: cover;
 }
@@ -268,13 +290,6 @@ header h2{
     text-align: left;
 }
 
-header h2{
-    color: var(--white);
-    font-size: 48px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
 
 
 /* Header End */
